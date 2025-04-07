@@ -12,7 +12,7 @@ from google.genai.errors import ClientError
 import random
 import time
 import asyncio
-
+from lxml.html.clean import Cleaner
 
 
 # Store API keys securely (Replace with your actual API keys)
@@ -372,3 +372,6 @@ if st.button('Search') or "slider_shown" in st.session_state:
             else:
                 st.markdown("⚠️ Summary not found.")
             st.write("---")
+
+        st.header("Dataframe of Results")
+        st.dataframe(df)
