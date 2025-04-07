@@ -3,3 +3,4 @@ google-genai
 pandas
 plotly
 streamlit-tags
+newspaper3k
