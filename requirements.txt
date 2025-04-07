@@ -4,3 +4,4 @@ pandas
 plotly
 streamlit-tags
 newspaper3k
+lxml-html-clean
