@@ -66,7 +66,7 @@ def fetch_news(search, start_date, end_date, sports):
         )
     else:
         news_url = (
-            f"https://newsapi.org/v2/everything?q={search} NOT sports NOT Football&"
+            f"https://newsapi.org/v2/everything?q={search} NOT sports NOT Football NOT basketball&"
             f"from={start_date}&to={end_date}&sortBy=popularity&apiKey={NEWS_API_KEY}"
         )
     response = requests.get(news_url)
